@@ -1,0 +1,65 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: "#003fb1",
+        "primary-container": "#1a56db",
+        "on-primary": "#ffffff",
+        "primary-fixed": "#dbe1ff",
+        "primary-fixed-dim": "#b5c4ff",
+        secondary: "#006c49",
+        "on-secondary": "#ffffff",
+        "secondary-container": "#6cf8bb",
+        "on-secondary-container": "#00714d",
+        tertiary: "#694100",
+        "on-tertiary": "#ffffff",
+        "tertiary-container": "#895600",
+        "on-tertiary-container": "#ffd6a8",
+        surface: "#f8f9fa",
+        "surface-container-lowest": "#ffffff",
+        "surface-container-low": "#f3f4f5",
+        "surface-container": "#edeeef",
+        "surface-container-high": "#e7e8e9",
+        "surface-container-highest": "#e1e3e4",
+        "on-surface": "#191c1d",
+        "on-surface-variant": "#434654",
+        outline: "#737686",
+        "outline-variant": "#c3c5d7",
+        error: "#ba1a1a",
+        background: "#f8f9fa",
+        "inverse-surface": "#2e3132",
+        "surface-tint": "#1353d8",
+      },
+      fontSize: {
+        "display-lg": ["48px", { lineHeight: "56px", fontWeight: "700", letterSpacing: "-0.02em" }],
+        "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+        "label-md": ["14px", { lineHeight: "20px", fontWeight: "500", letterSpacing: "0.01em" }],
+        "label-sm": ["12px", { lineHeight: "16px", fontWeight: "600" }],
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+      },
+      borderRadius: {
+        sm: "0.25rem",
+        DEFAULT: "0.5rem",
+        md: "0.75rem",
+        lg: "1rem",
+        xl: "1.5rem",
+        full: "9999px",
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
